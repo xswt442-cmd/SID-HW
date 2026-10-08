@@ -1,6 +1,25 @@
-# tooling
+# Local agent tooling
 .codex
 .claude
 .cursor
 AGENTS.md
+
+# Generated course submission bundles
 *.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# Local development environments and generated caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+node_modules/
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
