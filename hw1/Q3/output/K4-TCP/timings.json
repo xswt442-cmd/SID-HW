@@ -1,0 +1,82 @@
+{
+  "workers": 4,
+  "distributed_wall_seconds": 20.102963717996317,
+  "final_merge_seconds": 0.6792632639990188,
+  "time_b_seconds": 3.927282042001025,
+  "archive_unpack_seconds": 0.19069341499562142,
+  "result_packaging_seconds": 3.100825886001985,
+  "worker_compute_max_seconds": 1.9843065160000606,
+  "worker_timings": [
+    {
+      "endpoint": "127.0.0.1:19710",
+      "upload_seconds": 0.042768416009494103,
+      "sort_seconds": 1.7281436260000191,
+      "download_seconds": 15.70570378798584
+    },
+    {
+      "endpoint": "127.0.0.1:19711",
+      "upload_seconds": 0.027343530993675813,
+      "sort_seconds": 1.7705426399999737,
+      "download_seconds": 14.686323422007263
+    },
+    {
+      "endpoint": "127.0.0.1:19712",
+      "upload_seconds": 0.04437518100894522,
+      "sort_seconds": 1.906180068000026,
+      "download_seconds": 11.674209712000447
+    },
+    {
+      "endpoint": "127.0.0.1:19713",
+      "upload_seconds": 0.034367630003544036,
+      "sort_seconds": 1.9843065160000606,
+      "download_seconds": 16.74702725199313
+    }
+  ],
+  "worker_phase_sums": {
+    "upload_seconds": 0.04437518100894522,
+    "sort_seconds": 1.9843065160000606,
+    "download_seconds": 16.74702725199313
+  },
+  "result_archive_bytes": 23613947,
+  "client_upload_bytes": 20979888,
+  "input_packaging_seconds": 2.862985770996602,
+  "client_upload_seconds": 0.18939424700511154,
+  "client_download_seconds": 0.22923888600053033,
+  "client_extract_seconds": 0.25041067699930863,
+  "client_roundtrip_seconds": 30.894574275000195,
+  "time_a_seconds": 26.926512599995476,
+  "speedup_ratio_time_a_over_b": 6.85627166880938,
+  "measurement_note": "Four logical Python Workers: two processes on each of the two real cloud hosts; TCP worker endpoints reached through SSH local forwards. time-A includes client archive creation.",
+  "worker_host_map": {
+    "127.0.0.1:19710": "Debian xswt@43.142.116.197",
+    "127.0.0.1:19711": "Debian xswt@43.142.116.197",
+    "127.0.0.1:19712": "Ubuntu xswt@43.142.102.212",
+    "127.0.0.1:19713": "Ubuntu xswt@43.142.102.212"
+  },
+  "groups_by_endpoint": {
+    "127.0.0.1:19710": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "127.0.0.1:19711": [
+      1,
+      5,
+      9,
+      13
+    ],
+    "127.0.0.1:19712": [
+      2,
+      6,
+      10,
+      14
+    ],
+    "127.0.0.1:19713": [
+      3,
+      7,
+      11,
+      15
+    ]
+  }
+}

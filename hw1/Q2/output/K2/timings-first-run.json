@@ -1,0 +1,16 @@
+{
+  "sid": "2453721",
+  "k": 2,
+  "measurement": "first real SSH/SCP run on supplied cloud servers",
+  "workers": [
+    "xswt@43.142.116.197",
+    "xswt@43.142.102.212"
+  ],
+  "upload_max_seconds": 5.201,
+  "remote_quicksort_max_seconds": 7.28,
+  "download_max_seconds": 23.113,
+  "final_merge_seconds": 0.912,
+  "time_a_seconds": 36.887,
+  "time_b_seconds": 3.893,
+  "time_a_over_time_b": 9.475
+}

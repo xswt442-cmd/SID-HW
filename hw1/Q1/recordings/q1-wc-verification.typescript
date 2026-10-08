@@ -1,0 +1,22 @@
+Script started on 2026-10-08 12:14:37+08:00 [COMMAND="printf '$ ./hw1/Q1/2453721-hw1-q1-verify.sh (read-only; Q1 data preserved)\n'; ./hw1/Q1/2453721-hw1-q1-verify.sh" <not executed on terminal>]
+$ ./hw1/Q1/2453721-hw1-q1-verify.sh (read-only; Q1 data preserved)
+2453721-hw1-q1-0.txt: 131072 words
+2453721-hw1-q1-1.txt: 131072 words
+2453721-hw1-q1-2.txt: 131072 words
+2453721-hw1-q1-3.txt: 131072 words
+2453721-hw1-q1-4.txt: 131072 words
+2453721-hw1-q1-5.txt: 131072 words
+2453721-hw1-q1-6.txt: 131072 words
+2453721-hw1-q1-7.txt: 131072 words
+2453721-hw1-q1-8.txt: 131072 words
+2453721-hw1-q1-9.txt: 131072 words
+2453721-hw1-q1-10.txt: 131072 words
+2453721-hw1-q1-11.txt: 131072 words
+2453721-hw1-q1-12.txt: 131072 words
+2453721-hw1-q1-13.txt: 131072 words
+2453721-hw1-q1-14.txt: 131072 words
+2453721-hw1-q1-15.txt: 131072 words
+2453721-hw1-q1.txt: 2097152 words
+YES: the total wc is equal to 2097152
+
+Script done on 2026-10-08 12:14:38+08:00 [COMMAND_EXIT_CODE="0"]

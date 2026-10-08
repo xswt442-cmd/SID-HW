@@ -1,0 +1,23 @@
+{
+  "workers": 2,
+  "distributed_wall_seconds": 2.4488819309990504,
+  "final_merge_seconds": 0.6813615840001148,
+  "time_b_seconds": 4.203292971003975,
+  "archive_unpack_seconds": 0.180273104000662,
+  "result_packaging_seconds": 3.156241686003341,
+  "worker_compute_max_seconds": 1.5857004549907288,
+  "worker_phase_sums": {
+    "upload_seconds": 0.0336609030055115,
+    "sort_seconds": 1.5857004549907288,
+    "download_seconds": 0.08545274702191819
+  },
+  "result_archive_bytes": 23613947,
+  "client_upload_bytes": 20979888,
+  "client_upload_seconds": 0.15377578899642685,
+  "client_download_seconds": 0.22370043599948986,
+  "client_extract_seconds": 0.2371007589972578,
+  "client_roundtrip_seconds": 10.648165001999587,
+  "time_a_seconds": 6.399973704996228,
+  "speedup_ratio_time_a_over_b": 1.522609475272328,
+  "measurement_note": "Historical local loopback prototype; real two-cloud-host worker experiments are in output/K2-TCP and output/K4-TCP."
+}

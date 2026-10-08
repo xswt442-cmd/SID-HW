@@ -1,0 +1,40 @@
+Script started on 2026-10-08 12:11:58+08:00 [COMMAND="printf '$ python3 hw1/Q3/2453721-hw1-q3.py submit --server 127.0.0.1:19701 --output hw1/Q3/output/K2-TCP\n'; python3 hw1/Q3/2453721-hw1-q3.py submit --server 127.0.0.1:19701 --output hw1/Q3/output/K2-TCP" <not executed on terminal>]
+$ python3 hw1/Q3/2453721-hw1-q3.py submit --server 127.0.0.1:19701 --output hw1/Q3/output/K2-TCP
+{
+  "workers": 2,
+  "distributed_wall_seconds": 20.44982002699544,
+  "final_merge_seconds": 0.6805593960016267,
+  "time_b_seconds": 4.088693776997388,
+  "archive_unpack_seconds": 0.17971564699837472,
+  "result_packaging_seconds": 3.1643910400016466,
+  "worker_compute_max_seconds": 4.283867171034217,
+  "worker_timings": [
+    {
+      "endpoint": "127.0.0.1:19710",
+      "upload_seconds": 0.05496818700339645,
+      "sort_seconds": 3.3349515115842223,
+      "download_seconds": 14.117813010998361
+    },
+    {
+      "endpoint": "127.0.0.1:19712",
+      "upload_seconds": 0.057846351017360575,
+      "sort_seconds": 4.283867171034217,
+      "download_seconds": 13.7618451090093
+    }
+  ],
+  "worker_phase_sums": {
+    "upload_seconds": 0.057846351017360575,
+    "sort_seconds": 4.283867171034217,
+    "download_seconds": 14.117813010998361
+  },
+  "result_archive_bytes": 23613947,
+  "client_upload_bytes": 20979888,
+  "client_upload_seconds": 0.1955658709994168,
+  "client_download_seconds": 0.22698734699952183,
+  "client_extract_seconds": 0.2559499599956325,
+  "client_roundtrip_seconds": 28.61346561800019,
+  "time_a_seconds": 24.472429891990032,
+  "speedup_ratio_time_a_over_b": 5.9853907450026345
+}
+
+Script done on 2026-10-08 12:12:31+08:00 [COMMAND_EXIT_CODE="0"]

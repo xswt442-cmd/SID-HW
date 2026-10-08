@@ -1,0 +1,14 @@
+Script started on 2026-10-08 12:28:42+08:00 [COMMAND="printf '$ python3 hw1/Q2/verify_sorted.py [Q2/Q3 K2/K4 outputs]\n'; python3 hw1/Q2/verify_sorted.py hw1/Q2/output/2453721-hw1-q2-ms.txt hw1/Q2/output/2453721-hw1-q2-qs.txt hw1/Q2/output/K2/2453721-hw1-q2-qs.txt hw1/Q2/output/K2/2453721-hw1-q2-ms.txt hw1/Q2/output/K4/2453721-hw1-q2-qs.txt hw1/Q2/output/K4/2453721-hw1-q2-ms.txt hw1/Q3/output/K2-TCP/2453721-hw1-q2-qs.txt hw1/Q3/output/K2-TCP/2453721-hw1-q2-ms.txt hw1/Q3/output/K4-TCP/2453721-hw1-q2-qs.txt hw1/Q3/output/K4-TCP/2453721-hw1-q2-ms.txt" <not executed on terminal>]
+$ python3 hw1/Q2/verify_sorted.py [Q2/Q3 K2/K4 outputs]
+OK sorted: hw1/Q2/output/2453721-hw1-q2-ms.txt (2097152 rows)
+OK sorted and identical: hw1/Q2/output/2453721-hw1-q2-qs.txt (2097152 rows)
+OK sorted and identical: hw1/Q2/output/K2/2453721-hw1-q2-qs.txt (2097152 rows)
+OK sorted and identical: hw1/Q2/output/K2/2453721-hw1-q2-ms.txt (2097152 rows)
+OK sorted and identical: hw1/Q2/output/K4/2453721-hw1-q2-qs.txt (2097152 rows)
+OK sorted and identical: hw1/Q2/output/K4/2453721-hw1-q2-ms.txt (2097152 rows)
+OK sorted and identical: hw1/Q3/output/K2-TCP/2453721-hw1-q2-qs.txt (2097152 rows)
+OK sorted and identical: hw1/Q3/output/K2-TCP/2453721-hw1-q2-ms.txt (2097152 rows)
+OK sorted and identical: hw1/Q3/output/K4-TCP/2453721-hw1-q2-qs.txt (2097152 rows)
+OK sorted and identical: hw1/Q3/output/K4-TCP/2453721-hw1-q2-ms.txt (2097152 rows)
+
+Script done on 2026-10-08 12:28:45+08:00 [COMMAND_EXIT_CODE="0"]

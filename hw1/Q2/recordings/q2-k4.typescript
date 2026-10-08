@@ -1,0 +1,15 @@
+Script started on 2026-10-08 12:22:50+08:00 [COMMAND="printf '$ K=4 WORKERS=Debian::hw1-q2-w1,Debian::hw1-q2-w2,Ubuntu::hw1-q2-w1,Ubuntu::hw1-q2-w2 ./hw1/Q2/2453721-hw1-q2.sh --output-dir hw1/Q2/output/K4\n'; K=4 WORKERS='xswt@43.142.116.197::hw1-q2-w1,xswt@43.142.116.197::hw1-q2-w2,xswt@43.142.102.212::hw1-q2-w1,xswt@43.142.102.212::hw1-q2-w2' ./hw1/Q2/2453721-hw1-q2.sh --output-dir hw1/Q2/output/K4" <not executed on terminal>]
+$ K=4 WORKERS=Debian::hw1-q2-w1,Debian::hw1-q2-w2,Ubuntu::hw1-q2-w1,Ubuntu::hw1-q2-w2 ./hw1/Q2/2453721-hw1-q2.sh --output-dir hw1/Q2/output/K4
+Python 3.12.15
+Python 3.12.15
+Python 3.12.15
+Python 3.12.15
+upload max: 2.652s
+remote quicksort max: 4.526s
+download max: 20.494s
+local final merge: 0.939s
+time-A (parallel SCP/SSH plus final merge): 29.575s
+time-B (local merge sort): 4.030s
+speedup ratio time-A/time-B: 7.338
+
+Script done on 2026-10-08 12:23:29+08:00 [COMMAND_EXIT_CODE="0"]

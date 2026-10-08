@@ -1,0 +1,52 @@
+Script started on 2026-10-08 12:13:04+08:00 [COMMAND="printf '$ python3 hw1/Q3/2453721-hw1-q3.py submit --server 127.0.0.1:19702 --output hw1/Q3/output/K4-TCP\n'; python3 hw1/Q3/2453721-hw1-q3.py submit --server 127.0.0.1:19702 --output hw1/Q3/output/K4-TCP" <not executed on terminal>]
+$ python3 hw1/Q3/2453721-hw1-q3.py submit --server 127.0.0.1:19702 --output hw1/Q3/output/K4-TCP
+{
+  "workers": 4,
+  "distributed_wall_seconds": 20.44214022599772,
+  "final_merge_seconds": 0.6782617660064716,
+  "time_b_seconds": 3.9422103069955483,
+  "archive_unpack_seconds": 0.18491050499869743,
+  "result_packaging_seconds": 3.0707406510045985,
+  "worker_compute_max_seconds": 2.027614369057119,
+  "worker_timings": [
+    {
+      "endpoint": "127.0.0.1:19710",
+      "upload_seconds": 0.029959711006085854,
+      "sort_seconds": 1.7261655279435217,
+      "download_seconds": 13.60126701900299
+    },
+    {
+      "endpoint": "127.0.0.1:19711",
+      "upload_seconds": 0.030285191991424654,
+      "sort_seconds": 1.6892769515980035,
+      "download_seconds": 16.94156577400281
+    },
+    {
+      "endpoint": "127.0.0.1:19712",
+      "upload_seconds": 0.03157945300335996,
+      "sort_seconds": 1.9491971200332046,
+      "download_seconds": 16.50152936000086
+    },
+    {
+      "endpoint": "127.0.0.1:19713",
+      "upload_seconds": 0.031278916001610924,
+      "sort_seconds": 2.027614369057119,
+      "download_seconds": 7.494903299011639
+    }
+  ],
+  "worker_phase_sums": {
+    "upload_seconds": 0.03157945300335996,
+    "sort_seconds": 2.027614369057119,
+    "download_seconds": 16.94156577400281
+  },
+  "result_archive_bytes": 23613947,
+  "client_upload_bytes": 20979888,
+  "client_upload_seconds": 0.14999241100304062,
+  "client_download_seconds": 0.23164230599650182,
+  "client_extract_seconds": 0.24501366700133076,
+  "client_roundtrip_seconds": 28.31692692499928,
+  "time_a_seconds": 24.324439766001888,
+  "speedup_ratio_time_a_over_b": 6.170254215721971
+}
+
+Script done on 2026-10-08 12:13:37+08:00 [COMMAND_EXIT_CODE="0"]

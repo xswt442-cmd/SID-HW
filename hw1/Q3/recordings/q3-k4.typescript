@@ -1,0 +1,53 @@
+Script started on 2026-10-08 12:27:29+08:00 [COMMAND="printf '$ python3 hw1/Q3/2453721-hw1-q3.py submit --server 127.0.0.1:19702 --output hw1/Q3/output/K4-TCP\n'; python3 hw1/Q3/2453721-hw1-q3.py submit --server 127.0.0.1:19702 --output hw1/Q3/output/K4-TCP" <not executed on terminal>]
+$ python3 hw1/Q3/2453721-hw1-q3.py submit --server 127.0.0.1:19702 --output hw1/Q3/output/K4-TCP
+{
+  "workers": 4,
+  "distributed_wall_seconds": 20.102963717996317,
+  "final_merge_seconds": 0.6792632639990188,
+  "time_b_seconds": 3.927282042001025,
+  "archive_unpack_seconds": 0.19069341499562142,
+  "result_packaging_seconds": 3.100825886001985,
+  "worker_compute_max_seconds": 1.9843065160000606,
+  "worker_timings": [
+    {
+      "endpoint": "127.0.0.1:19710",
+      "upload_seconds": 0.042768416009494103,
+      "sort_seconds": 1.7281436260000191,
+      "download_seconds": 15.70570378798584
+    },
+    {
+      "endpoint": "127.0.0.1:19711",
+      "upload_seconds": 0.027343530993675813,
+      "sort_seconds": 1.7705426399999737,
+      "download_seconds": 14.686323422007263
+    },
+    {
+      "endpoint": "127.0.0.1:19712",
+      "upload_seconds": 0.04437518100894522,
+      "sort_seconds": 1.906180068000026,
+      "download_seconds": 11.674209712000447
+    },
+    {
+      "endpoint": "127.0.0.1:19713",
+      "upload_seconds": 0.034367630003544036,
+      "sort_seconds": 1.9843065160000606,
+      "download_seconds": 16.74702725199313
+    }
+  ],
+  "worker_phase_sums": {
+    "upload_seconds": 0.04437518100894522,
+    "sort_seconds": 1.9843065160000606,
+    "download_seconds": 16.74702725199313
+  },
+  "result_archive_bytes": 23613947,
+  "client_upload_bytes": 20979888,
+  "input_packaging_seconds": 2.862985770996602,
+  "client_upload_seconds": 0.18939424700511154,
+  "client_download_seconds": 0.22923888600053033,
+  "client_extract_seconds": 0.25041067699930863,
+  "client_roundtrip_seconds": 30.894574275000195,
+  "time_a_seconds": 26.926512599995476,
+  "speedup_ratio_time_a_over_b": 6.85627166880938
+}
+
+Script done on 2026-10-08 12:28:01+08:00 [COMMAND_EXIT_CODE="0"]
