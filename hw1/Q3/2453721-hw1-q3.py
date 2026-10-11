@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""TCP based distributed quicksort for HW1 Q3.
+"""HW1 Q3 的 TCP 分布式快速排序程序。
 
-Roles:
-  worker: run on each teammate machine and wait for sort requests
-  master: run on the extra server, receive a submission, dispatch chunks to workers
-  submit: run on the student's computer and upload Q1/Q2 inputs and scripts
+worker：启动 TCP Worker 并等待排序请求。
+master：启动 Coordinator，接收作业文件并向 Worker 分发分组。
+submit：从本机打包并上传 Q1、Q2 所需文件，接收排序结果。
 """
 import argparse
 import concurrent.futures
@@ -60,7 +59,7 @@ def recv_blob(sock, limit=MAX_ARCHIVE_BYTES):
 
 
 def qs(values):
-    """Iterative 3-way quicksort used by each TCP worker."""
+    """TCP Worker 使用的迭代式三路快速排序。"""
     if len(values) < 2:
         return values
     stack, lo, hi = [], 0, len(values) - 1
@@ -266,7 +265,7 @@ def external_merge_sort(source, output, chunk_size=200000):
 
 
 def merge_sort(values):
-    """Stable bottom-up merge sort for one bounded in-memory chunk."""
+    """对一个有界内存分块执行稳定的自底向上归并排序。"""
     n = len(values)
     if n < 2:
         return values
@@ -374,7 +373,7 @@ def main():
     w.add_argument('--listen', type=parse_endpoint, default=('0.0.0.0', 9700))
     m = sub.add_parser('master')
     m.add_argument('--listen', type=parse_endpoint, default=('0.0.0.0', 9701))
-    m.add_argument('--workers', required=True, help='comma-separated HOST:PORT endpoints')
+    m.add_argument('--workers', required=True, help='以逗号分隔的 HOST:PORT Worker 地址')
     m.add_argument('--workdir', type=Path, default=Path('/tmp/hw1-q3'))
     c = sub.add_parser('submit')
     c.add_argument('--server', required=True, type=parse_endpoint)

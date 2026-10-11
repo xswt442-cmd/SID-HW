@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Usage: SID=2453721 [COUNT_PER_GROUP=131072] [GROUP_COUNT=16] ./2453721-hw1-q1.sh
+# 用法：SID=2453721 [COUNT_PER_GROUP=131072] [GROUP_COUNT=16] ./2453721-hw1-q1.sh
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SID="${SID:-2453721}"
 COUNT_PER_GROUP="${COUNT_PER_GROUP:-131072}"

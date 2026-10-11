@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Generate deterministic, uniformly sampled 32-bit primes for HW1 Q1."""
+"""按学号种子生成可复现的 32 位范围内均匀随机质数。"""
 import argparse
 import random
 from pathlib import Path
 
 LIMIT = 1 << 32
-# Deterministic Miller-Rabin bases for unsigned 32-bit integers.
+# 适用于无符号 32 位整数的确定性 Miller-Rabin 检验底数。
 BASES = (2, 3, 5, 7, 11, 13)
 
 
@@ -37,7 +37,7 @@ def is_prime(n: int) -> bool:
 
 def main() -> None:
     p = argparse.ArgumentParser()
-    p.add_argument('--sid', required=True, help='seed; a numeric SID is used as an integer')
+    p.add_argument('--sid', required=True, help='随机种子；数字学号按整数使用')
     p.add_argument('--count', type=int, default=131072)
     p.add_argument('--groups', type=int, default=16)
     p.add_argument('--output-dir', type=Path, default=Path('output'))
@@ -54,7 +54,7 @@ def main() -> None:
         path = args.output_dir / f'{args.sid}-hw1-q1-{group}.txt'
         with path.open('w', encoding='ascii', buffering=1024 * 1024) as f:
             for _ in range(args.count):
-                # Rejection sampling over the required interval gives uniform primes.
+                # 在题目指定范围内拒绝采样，使被选中的质数均匀分布。
                 while True:
                     candidate = rng.randrange(2, LIMIT)
                     if is_prime(candidate):

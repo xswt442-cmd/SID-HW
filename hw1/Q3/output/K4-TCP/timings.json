@@ -1,82 +1,49 @@
 {
   "workers": 4,
-  "distributed_wall_seconds": 20.102963717996317,
-  "final_merge_seconds": 0.6792632639990188,
-  "time_b_seconds": 3.927282042001025,
-  "archive_unpack_seconds": 0.19069341499562142,
-  "result_packaging_seconds": 3.100825886001985,
-  "worker_compute_max_seconds": 1.9843065160000606,
+  "distributed_wall_seconds": 25.794279610999638,
+  "final_merge_seconds": 0.6031269739996787,
+  "time_b_seconds": 3.505564121000134,
+  "archive_unpack_seconds": 0.15516349000017726,
+  "result_packaging_seconds": 2.5656630690000384,
+  "worker_compute_max_seconds": 1.9833584899897687,
   "worker_timings": [
     {
       "endpoint": "127.0.0.1:19710",
-      "upload_seconds": 0.042768416009494103,
-      "sort_seconds": 1.7281436260000191,
-      "download_seconds": 15.70570378798584
+      "upload_seconds": 0.2084339169996383,
+      "sort_seconds": 1.712337306002155,
+      "download_seconds": 10.122890575999918
     },
     {
       "endpoint": "127.0.0.1:19711",
-      "upload_seconds": 0.027343530993675813,
-      "sort_seconds": 1.7705426399999737,
-      "download_seconds": 14.686323422007263
+      "upload_seconds": 0.19542456100043637,
+      "sort_seconds": 1.743411943083629,
+      "download_seconds": 13.679414872999587
     },
     {
       "endpoint": "127.0.0.1:19712",
-      "upload_seconds": 0.04437518100894522,
-      "sort_seconds": 1.906180068000026,
-      "download_seconds": 11.674209712000447
+      "upload_seconds": 1.7050988969999707,
+      "sort_seconds": 1.923337504034862,
+      "download_seconds": 7.93980507499964
     },
     {
       "endpoint": "127.0.0.1:19713",
-      "upload_seconds": 0.034367630003544036,
-      "sort_seconds": 1.9843065160000606,
-      "download_seconds": 16.74702725199313
+      "upload_seconds": 1.7036551720002535,
+      "sort_seconds": 1.9833584899897687,
+      "download_seconds": 8.408557055999609
     }
   ],
   "worker_phase_sums": {
-    "upload_seconds": 0.04437518100894522,
-    "sort_seconds": 1.9843065160000606,
-    "download_seconds": 16.74702725199313
+    "upload_seconds": 1.7050988969999707,
+    "sort_seconds": 1.9833584899897687,
+    "download_seconds": 13.679414872999587
   },
   "result_archive_bytes": 23613947,
-  "client_upload_bytes": 20979888,
-  "input_packaging_seconds": 2.862985770996602,
-  "client_upload_seconds": 0.18939424700511154,
-  "client_download_seconds": 0.22923888600053033,
-  "client_extract_seconds": 0.25041067699930863,
-  "client_roundtrip_seconds": 30.894574275000195,
-  "time_a_seconds": 26.926512599995476,
-  "speedup_ratio_time_a_over_b": 6.85627166880938,
-  "measurement_note": "Four logical Python Workers: two processes on each of the two real cloud hosts; TCP worker endpoints reached through SSH local forwards. time-A includes client archive creation.",
-  "worker_host_map": {
-    "127.0.0.1:19710": "Debian xswt@43.142.116.197",
-    "127.0.0.1:19711": "Debian xswt@43.142.116.197",
-    "127.0.0.1:19712": "Ubuntu xswt@43.142.102.212",
-    "127.0.0.1:19713": "Ubuntu xswt@43.142.102.212"
-  },
-  "groups_by_endpoint": {
-    "127.0.0.1:19710": [
-      0,
-      4,
-      8,
-      12
-    ],
-    "127.0.0.1:19711": [
-      1,
-      5,
-      9,
-      13
-    ],
-    "127.0.0.1:19712": [
-      2,
-      6,
-      10,
-      14
-    ],
-    "127.0.0.1:19713": [
-      3,
-      7,
-      11,
-      15
-    ]
-  }
+  "client_upload_bytes": 20980138,
+  "input_packaging_seconds": 2.423929011999917,
+  "client_upload_seconds": 0.13568152400011968,
+  "client_download_seconds": 0.20460310599992226,
+  "client_extract_seconds": 0.23282799499975226,
+  "client_roundtrip_seconds": 35.05981449000001,
+  "time_a_seconds": 31.512147806999565,
+  "speedup_ratio_time_a_over_b": 8.989180262949855
 }

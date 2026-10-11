@@ -1,64 +1,37 @@
 {
   "workers": 2,
-  "distributed_wall_seconds": 20.918604339000012,
-  "final_merge_seconds": 0.6841378309982247,
-  "time_b_seconds": 4.052516891999403,
-  "archive_unpack_seconds": 0.18201569200027734,
-  "result_packaging_seconds": 3.164200578001328,
-  "worker_compute_max_seconds": 4.0501132709999865,
+  "distributed_wall_seconds": 24.433538710999983,
+  "final_merge_seconds": 0.6410198339999624,
+  "time_b_seconds": 3.7948787450000054,
+  "archive_unpack_seconds": 0.15719818299976396,
+  "result_packaging_seconds": 2.7003034899998966,
+  "worker_compute_max_seconds": 3.9011895789881237,
   "worker_timings": [
     {
       "endpoint": "127.0.0.1:19710",
-      "upload_seconds": 0.055274846992688254,
-      "sort_seconds": 3.3085152519999497,
-      "download_seconds": 13.830107005996979
+      "upload_seconds": 0.04994601100042928,
+      "sort_seconds": 3.510026990028564,
+      "download_seconds": 16.858091528000386
     },
     {
       "endpoint": "127.0.0.1:19712",
-      "upload_seconds": 0.05936424800893292,
-      "sort_seconds": 4.0501132709999865,
-      "download_seconds": 14.455237876012689
+      "upload_seconds": 0.010176766999393294,
+      "sort_seconds": 3.9011895789881237,
+      "download_seconds": 14.717623579999326
     }
   ],
   "worker_phase_sums": {
-    "upload_seconds": 0.05936424800893292,
-    "sort_seconds": 4.0501132709999865,
-    "download_seconds": 14.455237876012689
+    "upload_seconds": 0.04994601100042928,
+    "sort_seconds": 3.9011895789881237,
+    "download_seconds": 16.858091528000386
   },
   "result_archive_bytes": 23613947,
-  "client_upload_bytes": 20979888,
-  "input_packaging_seconds": 2.952753498000675,
-  "client_upload_seconds": 0.17211991800286341,
-  "client_download_seconds": 0.20164286000363063,
-  "client_extract_seconds": 0.2560600799988606,
-  "client_roundtrip_seconds": 31.93649178800115,
-  "time_a_seconds": 27.847396965007647,
-  "speedup_ratio_time_a_over_b": 6.8716300775907415,
-  "measurement_note": "Two real cloud hosts; TCP worker endpoints reached through SSH local forwards. time-A includes client archive creation.",
-  "worker_host_map": {
-    "127.0.0.1:19710": "Debian xswt@43.142.116.197",
-    "127.0.0.1:19712": "Ubuntu xswt@43.142.102.212"
-  },
-  "groups_by_endpoint": {
-    "127.0.0.1:19710": [
-      0,
-      2,
-      4,
-      6,
-      8,
-      10,
-      12,
-      14
-    ],
-    "127.0.0.1:19712": [
-      1,
-      3,
-      5,
-      7,
-      9,
-      11,
-      13,
-      15
-    ]
-  }
+  "client_upload_bytes": 20980138,
+  "input_packaging_seconds": 2.4244809810002153,
+  "client_upload_seconds": 0.14276563600014924,
+  "client_download_seconds": 0.16300768700011758,
+  "client_extract_seconds": 0.25931856800025344,
+  "client_roundtrip_seconds": 34.12078776199996,
+  "time_a_seconds": 30.28061325600038,
+  "speedup_ratio_time_a_over_b": 7.979336176655714
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify monotonic order and row-for-row identity against a reference file."""
+"""检查候选文件是否升序排列，并与基准文件逐行一致。"""
 import argparse
 from pathlib import Path
 

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""In-place three-way quicksort for one integer file (HW1 Q2)."""
+"""对单个整数文件执行原地三路快速排序。"""
 import argparse
 import random
 from pathlib import Path
 
 
 def quicksort(values):
-    """Iterative randomized three-way quicksort; duplicates are handled in one pass."""
+    """使用迭代式随机三路快排，一次处理与基准值相等的元素。"""
     if len(values) < 2:
         return values
     rng = random.Random(0)
@@ -26,7 +26,7 @@ def quicksort(values):
                     gt -= 1
                 else:
                     i += 1
-            # Process the smaller partition immediately to bound stack growth.
+            # 优先处理较小区间，控制待处理区间栈的增长。
             if lt - lo < hi - gt:
                 if gt + 1 < hi:
                     stack.append((gt + 1, hi))

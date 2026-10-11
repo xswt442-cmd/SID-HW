@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""External merge sort and k-way merge for HW1 Q2."""
+"""为 HW1 Q2 提供外部归并排序和多路归并。"""
 import argparse
 import heapq
 import os
@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 def merge_sort(values):
-    """Stable bottom-up merge sort, in O(n log n) time and O(n) extra space."""
+    """稳定的自底向上归并排序，时间复杂度为 O(n log n)，额外空间复杂度为 O(n)。"""
     n = len(values)
     if n < 2:
         return values
@@ -40,7 +40,7 @@ def merge_sort(values):
 
 
 def write_merged(inputs, output):
-    """Merge sorted text files and atomically replace output."""
+    """归并多个已有序文本文件，并以临时文件原子替换输出文件。"""
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     streams = [open(path, encoding='ascii') for path in inputs]
@@ -60,7 +60,7 @@ def write_merged(inputs, output):
 
 
 def sort_file(source, output, chunk_size=200000):
-    """External merge sort: sort bounded chunks, then k-way merge them."""
+    """外部归并排序：分块排序后，对各有序分块执行多路归并。"""
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     chunks = []
@@ -92,7 +92,7 @@ def main():
     p.add_argument('input', type=Path)
     p.add_argument('output', type=Path)
     p.add_argument('--chunk-size', type=int, default=200000)
-    p.add_argument('--merge', action='store_true', help='merge already sorted input files')
+    p.add_argument('--merge', action='store_true', help='归并多个已排序的输入文件')
     p.add_argument('extra_inputs', nargs='*', type=Path)
     args = p.parse_args()
     if args.merge:

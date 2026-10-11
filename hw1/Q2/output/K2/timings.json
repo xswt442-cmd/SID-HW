@@ -5,23 +5,23 @@
     {
       "ssh_target": "xswt@43.142.116.197",
       "docker_container": null,
-      "upload": 6.967763194996223,
-      "sort": 6.3438414330012165,
-      "download": 75.741602823
+      "upload": 4.1122671440002705,
+      "sort": 6.605670448999717,
+      "download": 21.901110119999885
     },
     {
       "ssh_target": "xswt@43.142.102.212",
       "docker_container": null,
-      "upload": 7.112662908002676,
-      "sort": 8.670840714003134,
-      "download": 70.80235448099847
+      "upload": 4.933335708999948,
+      "sort": 7.327823320000334,
+      "download": 21.863110422999853
     }
   ],
-  "upload_max_seconds": 7.112662908002676,
-  "remote_quicksort_max_seconds": 8.670840714003134,
-  "download_max_seconds": 75.741602823,
-  "final_merge_seconds": 0.9346290440007579,
-  "time_a_seconds": 91.0664550069996,
-  "time_b_seconds": 4.1592603320023045,
-  "time_a_over_time_b": 21.894867774039863
+  "upload_max_seconds": 4.933335708999948,
+  "remote_quicksort_max_seconds": 7.327823320000334,
+  "download_max_seconds": 21.901110119999885,
+  "final_merge_seconds": 0.8199624310000218,
+  "time_a_seconds": 36.126429847000054,
+  "time_b_seconds": 3.796740749000037,
+  "time_a_over_time_b": 9.515116315622766
 }
